@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
+
+	// state
 	const [blogs, setBlogs] = useState([
 		{
 			title: "My new website",
@@ -20,6 +22,9 @@ const Home = () => {
 		},
 	]);
 
+	const [name, setName] = useState("mario");
+
+	// functions/actions
 	const handleDelete = (id) => {
 		const newBlogsArray = blogs.filter((blog) => blog.id !== id);
 		setBlogs(newBlogsArray);
@@ -27,11 +32,20 @@ const Home = () => {
 
 	useEffect(() => {
 		console.log("Use effect run");
-	}, [blogs]);
+	}, [blogs, name]);
+
 
 	return (
 		<div className="home">
 			<BlogList blogs={blogs} title="Blogs list" handleDelete={handleDelete} />
+			<button
+				onClick={() => {
+					setName("Luigi");
+				}}
+			>
+				Change Name
+			</button>
+			<h4>{name}</h4>
 		</div>
 	);
 };
