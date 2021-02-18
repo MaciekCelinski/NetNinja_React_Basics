@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
-
 	// state
 	const [blogs, setBlogs] = useState([
 		{
@@ -33,7 +32,6 @@ const Home = () => {
 	useEffect(() => {
 		console.log("Use effect run");
 	}, [blogs, name]);
-
 
 	return (
 		<div className="home">
