@@ -23,6 +23,12 @@
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nulla quas inventore! Dolores ipsa quidem voluptates beatae rem eveniet perspiciatis?",
       "author": "mario",
       "id": 4
+    },
+    {
+      "title": "Route History Testing Blog",
+      "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque ipsum expedita quae adipisci, velit voluptate ullam ad officiis atque tenetur eos in neque aliquid non quis minima architecto eveniet? Facilis, deserunt? Odit, tempore.",
+      "author": "yoshi",
+      "id": 5
     }
   ]
 }
